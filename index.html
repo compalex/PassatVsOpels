@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw'n'Play</title>
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="img/up.png"
+             id="up"
+             onclick="getUp()"
+             width="80"
+             height="80">
+
+        <img src="img/left.png"
+             id="left"
+             onclick="getLeft()"
+             width="70"
+             height="70">
+
+        <canvas id="canvas"
+                width="1024"
+                height="512">
+        </canvas>
+
+        <img src="img/right.png"
+             id="right"
+             onclick="getRight()"
+             width="70"
+             height="70">
+
+        <img src="img/down.png"
+             id="down"
+             onclick="getDown()"
+             width="80"
+             height="80">
+
+        <label>f(x) = </label>
+        <input type="text" name="function" id="func" value="Math.pow(0.2*x + 22, 2) + 17">
+        <button onclick="setEq()">Draw</button>
+        <button onclick="drawPassat()" id="passatBtn">Сбросить Пассата</button>
+    </div>
+
+
+    <script src="js/mainScript.js"></script>
+
+</body>
+</html>
